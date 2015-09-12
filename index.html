@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>briatte.github.io</title>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <style type="text/css" media="screen">
+    a {
+      text-decoration: none;
+      color: #eee;
+    }
+    a:hover {
+      color: #ff9;
+    }
+    body {
+      font: 24px/150% "Inconsolata", monospace;
+      overflow: hidden;
+      height: 100%;
+      background: #333;
+      padding: 0;
+      margin: 0;
+      text-transform: lowercase;
+    }
+    section {
+      position: fixed;
+      top: 5%;
+      left: 5%;
+      z-index: 100;
+    }
+    footer {
+      position: fixed;
+      bottom: 5%;
+      left: 5%;
+      z-index: 100;
+      font-size: 75%;
+    }
+    footer p {
+      margin: 0;
+      color: #ccc;
+    }
+    h1, h2 {
+      font-size: 100%;
+      font-weight: normal;
+      color: #666;
+    }
+    li {
+      list-style-type: none;
+      padding: 0.5em 0;
+      color: #ccc;
+    }
+    #spiders {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    </style>
+</head>
+
+<body>
+
+  <canvas id="spiders"></canvas>
+  
+  <section>
+
+    <h1>projects</h1>
+
+    <ul>
+      <li>courses: 
+        <a href="https://github.com/briatte/aad">aad</a>, 
+        <a href="https://github.com/briatte/ida">ida</a>, 
+        <a href="https://github.com/briatte/srqm">srqm</a>
+      </li>
+      <li>ggplot2: 
+        <a href="https://github.com/briatte/ggcorr">ggcorr</a>, 
+        <a href="https://github.com/briatte/ggnet">ggnet</a>, 
+        <a href="https://github.com/briatte/ggtable">ggtable</a>
+      </li>
+      <li>networks: 
+        <a href="https://github.com/briatte/charlie-covers">charlie-covers</a>, 
+        <a href="https://github.com/briatte/conspi">conspi</a>, 
+        <a href="https://github.com/briatte/hyponet">hyponet</a>,
+        <a href="https://github.com/briatte/parlnet">parlnet</a>, 
+        <a href="https://github.com/briatte/parlviz">parlviz</a>
+      </li>
+      <li>models:
+        <a href="https://github.com/briatte/euspeech">elus</a>
+      </li>
+      <li>scrapers: 
+        <a href="https://github.com/briatte/euspeech">euspeech</a>, 
+        <a href="https://github.com/briatte/integritate">integritate</a>, 
+        <a href="https://github.com/briatte/PubMed">PubMed</a>,
+        <a href="https://github.com/briatte/revues">revues</a>
+      </li>
+    </ul>
+    
+    <h1>contributions</h1>
+    
+    <ul>
+      <li>packages: 
+        <a href="https://github.com/dgrtwo/broom">broom</a>, 
+        <a href="https://github.com/briatte/psData">psData</a>,
+        <a href="https://github.com/juba/questionr">questionr</a>, 
+        <a href="http://r-forge.r-project.org/projects/texreg/">texreg</a>
+      </li>
+      <li>reference:
+        <a href="https://github.com/larmarange/analyse-R">analyse-R</a>,
+        <a href="https://github.com/qinwf/awesome-R">awesome-R</a>,
+        <a href="https://github.com/OpenGovLD/skos">skos</a>
+      </li>
+    </ul>
+  
+  </section>
+        
+  <footer>
+    <p>hosted at <a href="https://pages.github.com/">github pages</a></p>
+    <p>spider by <a href="https://github.com/ehsanagh/eacuda">ehsan aghaei</a></p>
+  </footer>
+
+</body>
+
+<script src="jquery.min.js"></script>
+<script src="spider.js"></script>
+
+<html>
