@@ -10,6 +10,7 @@
       color: #eee;
     }
     a:hover {
+      text-transform: none;
       color: #ff9;
     }
     body {
@@ -39,9 +40,14 @@
       color: #ccc;
     }
     h1, h2 {
+      border: 1px solid transparent;
+      background: transparent;
+      border-radius: 5px;
+      padding: 10px;
       font-size: 100%;
       font-weight: normal;
       color: #666;
+      margin: 0;
     }
     li {
       list-style-type: none;
@@ -58,6 +64,17 @@
       left: 0;
       z-index: 1;
     }
+    .tooltip {
+    	display: none;
+      text-transform: none;
+    	color: #fff;
+    }
+    .hovered {
+      border: 1px solid #333;
+      background: rgba(25, 25, 25, 0.5); /* #161616; */
+      border-radius: 5px;
+      color: #ff9;
+    }
     </style>
 </head>
 
@@ -67,50 +84,50 @@
   
   <section>
 
-    <h1>projects</h1>
+    <h1 id="projects">projects</h1>
 
     <ul>
       <li>courses: 
-        <a href="https://github.com/briatte/aad">aad</a>, 
-        <a href="https://github.com/briatte/ida">ida</a>, 
-        <a href="https://github.com/briatte/srqm">srqm</a>
+        <a data-target="projects" class="info" title="exercises from an introductory workshop on quantitative methods, with R" href="https://github.com/briatte/aad">aad</a>, 
+        <a data-target="projects" class="info" title="introduction to data analysis, with R" href="https://github.com/briatte/ida">ida</a>, 
+        <a data-target="projects" class="info" title="statistical reasoning and quantitative methods, with Stata" href="https://github.com/briatte/srqm">srqm</a>
       </li>
       <li>ggplot2: 
-        <a href="https://github.com/briatte/ggcorr">ggcorr</a>, 
-        <a href="https://github.com/briatte/ggnet">ggnet</a>, 
-        <a href="https://github.com/briatte/ggtable">ggtable</a>
+        <a data-target="projects" class="info" title="correlation matrixes with ggplot2" href="https://github.com/briatte/ggcorr">ggcorr</a>, 
+        <a data-target="projects" class="info" title="network visualization with ggplot2" href="https://github.com/briatte/ggnet">ggnet</a>, 
+        <a data-target="projects" class="info" title="bar plot projections of frequencies and tabulations with ggplot2" href="https://github.com/briatte/ggtable">ggtable</a>
       </li>
       <li>networks: 
-        <a href="https://github.com/briatte/charlie-covers">charlie-covers</a>, 
-        <a href="https://github.com/briatte/conspi">conspi</a>, 
-        <a href="https://github.com/briatte/hyponet">hyponet</a>,
-        <a href="https://github.com/briatte/parlnet">parlnet</a>, 
-        <a href="https://github.com/briatte/parlviz">parlviz</a>
+        <a data-target="projects" class="info" title="thematic co-occurences in recent Charlie Hebdo covers" href="https://github.com/briatte/charlie-covers">charlie-covers</a>, 
+        <a data-target="projects" class="info" title="thematic mapping of conspiracy theories listed on three French websites" href="https://github.com/briatte/conspi">conspi</a>, 
+        <a data-target="projects" class="info" title="co-citation among French scientific blogs of the Hypotheses.org platform" href="https://github.com/briatte/hyponet">hyponet</a>,
+        <a data-target="projects" class="info" title="legislative cosponsorship networks in European parliaments (and a few others)" href="https://github.com/briatte/parlnet">parlnet</a>, 
+        <a data-target="projects" class="info" title="interactive visualizations of legislative cosponsorship networks" href="https://github.com/briatte/parlviz">parlviz</a>
       </li>
       <li>models:
-        <a href="https://github.com/briatte/euspeech">elus</a>
+        <a data-target="projects" class="info" title="Twitter-based Bayesian ideal points for French politicians" href="https://github.com/briatte/elus">elus</a>
       </li>
       <li>scrapers: 
-        <a href="https://github.com/briatte/euspeech">euspeech</a>, 
-        <a href="https://github.com/briatte/integritate">integritate</a>, 
-        <a href="https://github.com/briatte/PubMed">PubMed</a>,
-        <a href="https://github.com/briatte/revues">revues</a>
+        <a data-target="projects" class="info" title="get speeches given by Members of the European Parliament since 1999" href="https://github.com/briatte/euspeech">euspeech</a>, 
+        <a data-target="projects" class="info" title="get assets and interests declarations collected by the Romanian National Integrity Agency" href="https://github.com/briatte/integritate">integritate</a>, 
+        <a data-target="projects" class="info" title="get metadata for scientific articles indexed by Medline/PubMed" href="https://github.com/briatte/PubMed">PubMed</a>,
+        <a data-target="projects" class="info" title="get metadata for scientific journal articles indexed by Cairn.info" href="https://github.com/briatte/revues">revues</a>
       </li>
     </ul>
-    
-    <h1>contributions</h1>
+  
+    <h1 id="contributions">contributions</h1>
     
     <ul>
       <li>packages: 
-        <a href="https://github.com/dgrtwo/broom">broom</a>, 
-        <a href="https://github.com/briatte/psData">psData</a>,
-        <a href="https://github.com/juba/questionr">questionr</a>, 
-        <a href="http://r-forge.r-project.org/projects/texreg/">texreg</a>
+        <a data-target="contributions" class="info" title="convert statistical analysis objects into tidy format" href="https://github.com/dgrtwo/broom">broom</a>, 
+        <a data-target="contributions" class="info" title="S4 class to add a panel structure to data frames" href="https://github.com/briatte/psData">psData</a>,
+        <a data-target="contributions" class="info" title="make survey processing easier" href="https://github.com/juba/questionr">questionr</a>, 
+        <a data-target="contributions" class="info" title="convert regression output into screen or exportable tables" href="http://r-forge.r-project.org/projects/texreg/">texreg</a>
       </li>
       <li>reference:
-        <a href="https://github.com/larmarange/analyse-R">analyse-R</a>,
-        <a href="https://github.com/qinwf/awesome-R">awesome-R</a>,
-        <a href="https://github.com/OpenGovLD/skos">skos</a>
+        <a data-target="contributions" class="info" title="introduction à l'analyse d'enquêtes avec R et RStudio" href="https://github.com/larmarange/analyse-R">analyse-R</a>,
+        <a data-target="contributions" class="info" title="a curated list of awesome R frameworks, packages and software" href="https://github.com/qinwf/awesome-R">awesome-R</a>,
+        <a data-target="contributions" class="info" title="multilingual thesaurus for parliamentary data" href="https://github.com/OpenGovLD/skos">skos</a>
       </li>
     </ul>
   
@@ -119,13 +136,13 @@
   <p id="fork"><a href="https://github.com/briatte/briatte.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a></p>
         
   <footer>
-    <p>hosted at <a href="https://pages.github.com/">github pages</a></p>
-    <p>spider by <a href="https://github.com/ehsanagh/eacuda">ehsan aghaei</a></p>
+    <p>hosted at <a href="https://pages.github.com/">Github Pages</a></p>
+    <p>spider by <a href="https://github.com/ehsanagh/eacuda">Ehsan Aghaei</a></p>
   </footer>
   
+  <script src="jquery-2.1.4.min.js"></script>
+  <script src="spider.js"></script>
+  <script src="tooltip.js"></script>
+  
 </body>
-
-<script src="jquery.min.js"></script>
-<script src="spider.js"></script>
-
-<html>
+</html>
